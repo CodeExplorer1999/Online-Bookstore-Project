@@ -1,0 +1,541 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+/*MY CODE*/
+
+*{
+	text-decoration: none;
+}
+
+main {
+	padding-top: 100px;
+}
+
+/*body {
+	background-color: #f3f3f3;
+}*/
+
+header {
+	background-color: #fff;
+	width: 100%;
+	height: 100px;
+	position: fixed;
+
+}
+
+header .header-brand {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 24px;
+	font-weight: 900;
+	color: #111;
+	text-transform: uppercase;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px 0; /*20 pixels from left right and 0 from top bottom*/
+}
+
+header nav ul {
+	display: block;
+	margin: 0 auto;
+	width: -moz-max-content;
+}
+
+header nav ul li {
+	display: inline-block;
+	float: left;
+	list-style: none;
+	padding: 0px 16px;
+}
+
+header nav ul li a {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 16px;
+	color: #111;
+	text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+	color: #FF0000;
+}
+
+header .header-logo {
+	display: none;
+	}
+
+@media only screen and (min-width: 1000px) {
+	header .header-brand {
+		margin: 31px 0; /* to center it take header 100px high, 100-line-height in 38px, then 62px/2px = 31px*/
+		text-align: left;
+		line-height: 38px;
+		padding: 0px 20px 0px 40px; /*20 pixels from left right and 0 from top bottom and top padding is 0px, right is 20px, bottom is 0px and left is 40px*/
+		border-right: 3px solid #111;
+		float: left; /*make the boarder line postion to the left of*/
+	}
+
+	header nav ul {
+		margin: 20px 0px 0px 20px;
+		float: left;
+	}
+
+	header nav ul li a {
+		line-height: 60px;
+	}
+
+	header .header-logo {
+		display: block;
+		width: 1.5%;
+		float: right;
+		margin-right: 10px;
+		margin-top: 31px;
+		padding: 0 20px;
+
+	}
+}
+
+/*INDEX*/
+
+.index-banner {
+	width: 100%;
+	height: calc(100vh - 100px); /*vh = view height and 100px is height of the header. 
+	Subtract so when we dont scroll down on the page due to the background */
+	background-image: url('images/book2.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover; /*set to cover, no matter what the background will fit inside the container*/
+	display: table;
+}
+
+.vertical-center {
+	display: table-cell;
+	vertical-align: middle;
+
+}
+
+.index-banner h2 {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 60px;
+	font-weight: 900;
+	line-height: 65px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 2px 2px 8px #111 /*since font is white and background spots are white, cant see some of the letters */
+}
+
+.index-banner h1 {
+	
+	font-size: 28px;
+	font-weight: 100;
+	font-style: italic;
+	line-height: 40px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 2px 2px 8px #111 /*since font is white and background spots are white, cant see some of the letters */
+}
+
+.index-links div {
+	margin: 16px 16px 0;
+	width: calc(100% - 32px);
+	height: 100px;	/* total height of the boxes are 100px */
+	background-color: #f2f2f2;
+}
+
+.index-links div h3 {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 100px;
+	color: #111;
+	text-align: center;
+}
+
+@media only screen and (min-width: 1000px) {
+
+	.wrapper {
+	width: 1000px;
+	margin: 0 auto;
+	}
+
+	.index-banner {
+	height: 700px;	
+	}
+
+	.index-banner h1 {
+	display: block;
+	width: 560px;
+	margin: 0 auto;
+	}
+
+	.index-links {
+		overflow: hidden;
+	}
+
+	.index-links div {
+		margin: 20px 10px 0;
+		height: 230px;
+		background-color: #f2f2f2;
+		float: left;
+	}
+
+	.index-boxlink-square {
+		width: calc(25% - 20px) !important;
+	}
+
+	.index-boxlink-rectangle {
+		width: calc(50% - 20px) !important;
+	}
+
+	.index-links div h3 {	
+		line-height: 230px;	
+	}
+}
+
+/*BOOKS*/
+
+.books-links {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+
+.books-links h2 {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 28px;
+	font-weight: 600;
+	color: #111;
+	text-transform: uppercase;
+}
+
+.books-links .book1 .books-link {
+	background-image: url('images/batman.jpg');
+	background-size: 230px 230px;
+}
+
+.books-links .book2 .books-link {
+	background-image: url('images/milesmorales.jpg');
+	background-size: 230px 230px;
+}
+
+.books-links .book3 .books-link {
+	background-image: url('images/walkingdead.jpg');
+	background-size: 230px 230px;
+}
+
+.books-links .book4 .books-link {
+	background-image: url('images/killingjoke.jpg');
+	background-size: 230px 230px;
+}
+
+.books-links .book5 .books-link {
+	background-image: url('images/it.jpg');
+	background-size: 230px 230px;
+}
+
+.books-links .book6 .books-link {
+	background-image: url('images/raptors.jpg');
+	background-size: 230px 230px;
+}
+
+.books-links .book7 .books-link {
+	background-image: url('images/got.jpg');
+	background-size: 230px 230px;
+}
+
+.books-links .book8 .books-link {
+	background-image: url('images/scoobydoo.jpg');
+	background-size: 230px 230px;
+}
+
+.books-links .books-link {
+	float: left;
+	width: 230px;
+	height: 230px;
+	margin: 20px 10px 0;
+	background-color: #e3e3e3;
+}
+
+
+
+.books-links .books-link p {
+	padding-top: 45%;
+	font-family: 'Catamaran', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+/*SIGN-UP PAGE*/
+
+/*BOOKS*/
+
+main {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 120%;
+	background: #F8F8FF;
+}
+
+.signup-header {
+	width: 30%;
+	margin: 20px auto 0px;
+	color: white;
+	background: #111;
+	text-align: center;
+	padding: 20px;
+	text-transform: uppercase;
+}
+
+form {
+	width: 30%;
+	margin: 0px auto;
+	padding: 20px;
+	border: 1px solid #B0C4DE;
+	background: white;
+	border-radius: 0px 0px 10px 10px;
+}
+
+.input-group {
+	margin: 10px 0px 10px 0px;
+}
+
+.input-group label {
+	display: block; /*formats all the forms where everything is vertically aligned*/
+	text-align: left;
+	margin: 3px;
+}
+
+.input-group input {
+	height: 30px;
+	width: 93%;
+	padding: 5px 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid gray;
+}
+
+button {
+	/*margin: auto;
+	display: block;*/
+	font-family: 'Catamaran', sans-serif;
+	border: 2px solid #111;
+	background-color: white;
+	color: black;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 5px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #111;
+	color: white;
+}
+
+.books-links {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+
+.books-links h2 {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 28px;
+	font-weight: 600;
+	color: #111;
+	text-transform: uppercase;
+}
+
+.books-links .books-link {
+	float: left;
+	width: 230px;
+	height: 230px;
+	margin: 20px 10px 0;
+	background-color: #e3e3e3;
+}
+
+
+
+.books-links .books-link p {
+	padding-top: 45%;
+	font-family: 'Catamaran', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/*LOGIN*/
+
+
+
+.login-footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+
+
+/*CART*/
+
+img {
+
+}
+
+.cart-footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+/*FOOTER*/
+
+footer {
+	width: calc(100% - 80px);
+	padding: 40px 40px;
+	margin-top: 20px;
+	background-color: #111;
+	overflow: hidden;
+}
+
+footer ul {
+	width: -moz-max-content;
+	float: left;
+	padding-left: 20px;
+}
+
+footer ul li {
+	display: block;
+	list-style: none;
+}
+
+footer ul li a {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 24px;
+	color: #fff;
+	line-height: 36px;
+}
+
+.footer-socialmedia {
+	width: 50px;
+	float: right;
+}
+
+.footer-socialmedia img {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 1000px) {
+}
